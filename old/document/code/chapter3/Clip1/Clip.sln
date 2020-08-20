@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Clip", "Clip\Clip.vcxproj", "{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Debug|x64.ActiveCfg = Debug|x64
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Debug|x64.Build.0 = Debug|x64
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Debug|x86.ActiveCfg = Debug|Win32
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Debug|x86.Build.0 = Debug|Win32
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Release|x64.ActiveCfg = Release|x64
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Release|x64.Build.0 = Release|x64
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Release|x86.ActiveCfg = Release|Win32
+		{1FF0313F-7CDE-4FB7-A754-EAA14AD3FDAF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E006EE5-648E-4ACD-88BB-7AC23026CC05}
+	EndGlobalSection
+EndGlobal
