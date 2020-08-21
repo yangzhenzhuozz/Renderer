@@ -204,7 +204,10 @@ int loadOBJ(const char* filename, double*& vbo1, double*& vbo2)
 				int index[3];
 				for (int i = 0; i < 3; i++)
 				{
-					sscanf(face_string[i], "%d/%d/%d", index, index + 1, index + 2);//obj文件face有三个元素
+					if(sscanf(face_string[i], "%d/%d/%d", index, index + 1, index + 2)!=3)//obj文件face有三个元素
+					{
+						throw "文件面信息不是 v/vt/vn格式";
+					}
 
 					//添加当前三角形第i个顶点的坐标
 					vbo_1.push_back(Positions[(size_t)index[0] - 1].x);

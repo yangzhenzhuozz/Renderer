@@ -1,7 +1,4 @@
 set(PROJECT_NAME "render")#设置项目名到PROJECT_NAME变量，后面用于指定项目名称和生成的文件名
-SET(CMAKE_BUILD_TYPE "Debug")
-SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
-SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 project(${PROJECT_NAME})#设置项目名称
 cmake_minimum_required(VERSION 2.6)#指定Cmake最低版本
 
