@@ -21,7 +21,6 @@ typedef int LONG;
 #define GetBValue(rgb) (BYTE(rgb))
 #define GetGValue(rgb) (BYTE(((WORD)(rgb)) >> 8))
 #define GetRValue(rgb) (BYTE((rgb) >> 16))
-//framebuffer在bit_per_pixel=32时，一个像素占用4字节，第0字节为b，第1字节为g，第2字节为r，第3字节暂未使用，BGR宏用于将rgb值转换为符合framebuffer排列的数据
 #define BGR(color) ((((color)&0xFF) << 16) | ((color)&0xFF00FF00) | (((color)&0xFF0000) >> 16))
 #ifndef _max
 #define _max(a, b) (((a) > (b)) ? (a) : (b))
