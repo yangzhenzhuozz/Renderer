@@ -1,0 +1,11 @@
+1.安装emscripten(如果网络好的话，非常简单，几行命令就完成)
+2.执行如下命令编译 emcc .\Matrix.cpp .\GraphicsDevice.cpp .\GraphicsLibrary.cpp .\main.cpp --preload-file model -O3
+3.因为wasm文件不能在本地打开,所以需要启用webserver,然后使用浏览器访问index.html
+
+以下介绍一个方便的webserver，可以快速的测试上述代码:
+1.安装http-server：npm i -g http-server
+2.index.html的目录下执行命令:http-server
+3.在浏览器中打开:localhost:8080
+4.观看执行结果
+
+强烈建议使用chromium内核的浏览器或者Firefox，我在chrome、新版Edge(chromium内核)和火狐中测试一切正常,并且发现火狐绘制一帧的时间仅仅为chromium(chrome和新版Edge速度差不多)的一半左右。

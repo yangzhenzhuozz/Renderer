@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="640" height="480"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        function update() {//提供给C++调用的canvas更新函数
+            var buf_addr = Module._get_img_buf();
+            var u8o = new Uint8ClampedArray(Module.HEAPU8.subarray(buf_addr, buf_addr + 640 * 480 * 4));//截取这段内存作为显存
+            var imgData = new ImageData(u8o, 640, 480);
+            ctx.putImageData(imgData, 0, 0);
+        }
+    </script>
+    <script src="a.out.js"></script>
+</body>
+
+</html>
