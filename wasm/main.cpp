@@ -284,6 +284,7 @@ int main()
 	delete vbo1;
 	delete vbo2;
 	delete gl;
+	delete gd;
 	return 0;
 }
 
