@@ -8,4 +8,4 @@
 3.在浏览器中打开:localhost:8080
 4.观看执行结果
 
-强烈建议使用chromium内核的浏览器或者Firefox，我在chrome、新版Edge(chromium内核)和火狐中测试一切正常,并且发现火狐绘制一帧的时间仅仅为chromium(chrome和新版Edge速度差不多)的一半左右。
+强烈建议使用chromium内核的浏览器或者Firefox，我在chrome、新版Edge(chromium内核)和火狐中测试一切正常
